@@ -27,7 +27,7 @@
   }
 }
 
-.hidden-tablet {
+.hidden-mobile {
   @include mobile {
     display: none !important;
   }
