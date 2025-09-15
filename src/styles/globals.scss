@@ -89,3 +89,8 @@ a {
 :focus-visible {
   @include focus-visible();
 }
+
+/* Фикс бага с бесконечным увеличением ширины слайдера */
+:has(.swiper) {
+  min-width: 0;
+}
