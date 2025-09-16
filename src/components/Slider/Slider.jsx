@@ -4,9 +4,28 @@ import classNames from 'classnames'
 import SliderNavigation from "./components/SliderNavigation"
 
 const defaultSliderParams = {
-  slidesPerView: 5,
-  slidesPerGroup: 5,
-  spaceBetween: 30,
+  slidesPerView: 2,
+  slidesPerGroup: 1,
+  spaceBetween: 20,
+  breakpoints: {
+    481: {
+      slidesPerView: 3,
+      slidesPerGroup: 3,
+    },
+    768: {
+      slidesPerView: 4,
+      slidesPerGroup: 4,
+      allowTouchMove: true,
+    },
+    1024: {
+      slidesPerView: 5,
+      slidesPerGroup: 5,
+      allowTouchMove: false,
+    },
+    1441: {
+      spaceBetween: 30,
+    },
+  }
 }
 
 const Slider = (props) => {
@@ -15,11 +34,15 @@ const Slider = (props) => {
     children,
     navigationTargetElementId = null,
     sliderParams = defaultSliderParams,
+    isBleedOnMobileS,
+    hasScrollBar = true,
   } = props
 
   return (
     <div
-      className={classNames(className, 'slider')}
+      className={classNames('slider', {
+        'slider--bleed-mobile-s': isBleedOnMobileS,
+      })}
       data-js-slider={JSON.stringify({
         sliderParams,
         navigationTargetElementId,
@@ -38,6 +61,13 @@ const Slider = (props) => {
       {!navigationTargetElementId && (
         <SliderNavigation
           className='slider__navigation'
+        />
+      )}
+
+      {hasScrollBar && (
+        <div
+          className="slider__scrollbar visible-mobile"
+          data-js-slider-scrollbar=""
         />
       )}
     </div>
