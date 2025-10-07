@@ -182,7 +182,488 @@ const collectionGroups = [
           spaceBetween: 30,
           breakpoints: {
             0: {
-              slidesPerView: 1.6,
+              slidesPerView: 1.58,
+              slidesPerGroup: 1,
+              spaceBetween: 20,
+              allowTouchMove: true,
+            },
+            481: {
+              slidesPerView: 2,
+              slidesPerGroup: 2,
+              spaceBetween: 20,
+              allowTouchMove: true,
+            },
+            768: {
+              slidesPerView: 3,
+              slidesPerGroup: 3,
+              spaceBetween: 20,
+              allowTouchMove: false,
+            },
+            1024: {
+              spaceBetween: 20,
+              allowTouchMove: false,
+            },
+            1441: {
+              spaceBetween: 30,
+              allowTouchMove: false,
+            },
+          }
+        },
+      },
+      {
+        title: 'Trending Now',
+        movieItems: [
+          {
+            title: 'Morbius',
+            imgSrc: '/src/assets/images/movies/1.jpg',
+            duration: '1h 30min',
+            views: '2K',
+          },
+          {
+            title: 'Bhai Jaan',
+            imgSrc: '/src/assets/images/movies/2.jpg',
+            duration: '1h 57min',
+            views: '1.5K',
+          },
+          {
+            title: 'Suraj pe Mangal Bhari',
+            imgSrc: '/src/assets/images/movies/3.jpg',
+            duration: '2h 10min',
+            views: '1.8K',
+          },
+          {
+            title: 'Pathan',
+            imgSrc: '/src/assets/images/movies/4.jpg',
+            duration: '2h 20min',
+            views: '3K',
+          },
+          {
+            title: 'Ant-man',
+            imgSrc: '/src/assets/images/movies/5.jpg',
+            duration: '1h 42min',
+            views: '5K',
+          },
+
+          {
+            title: 'Morbius',
+            imgSrc: '/src/assets/images/movies/1.jpg',
+            duration: '1h 30min',
+            views: '2K',
+          },
+          {
+            title: 'Bhai Jaan',
+            imgSrc: '/src/assets/images/movies/2.jpg',
+            duration: '1h 57min',
+            views: '1.5K',
+          },
+          {
+            title: 'Suraj pe Mangal Bhari',
+            imgSrc: '/src/assets/images/movies/3.jpg',
+            duration: '2h 10min',
+            views: '1.8K',
+          },
+          {
+            title: 'Pathan',
+            imgSrc: '/src/assets/images/movies/4.jpg',
+            duration: '2h 20min',
+            views: '3K',
+          },
+          {
+            title: 'Ant-man',
+            imgSrc: '/src/assets/images/movies/5.jpg',
+            duration: '1h 42min',
+            views: '5K',
+          },
+
+          {
+            title: 'Morbius',
+            imgSrc: '/src/assets/images/movies/1.jpg',
+            duration: '1h 30min',
+            views: '2K',
+          },
+          {
+            title: 'Bhai Jaan',
+            imgSrc: '/src/assets/images/movies/2.jpg',
+            duration: '1h 57min',
+            views: '1.5K',
+          },
+          {
+            title: 'Suraj pe Mangal Bhari',
+            imgSrc: '/src/assets/images/movies/3.jpg',
+            duration: '2h 10min',
+            views: '1.8K',
+          },
+          {
+            title: 'Pathan',
+            imgSrc: '/src/assets/images/movies/4.jpg',
+            duration: '2h 20min',
+            views: '3K',
+          },
+          {
+            title: 'Ant-man',
+            imgSrc: '/src/assets/images/movies/5.jpg',
+            duration: '1h 42min',
+            views: '5K',
+          },
+
+          {
+            title: 'Morbius',
+            imgSrc: '/src/assets/images/movies/1.jpg',
+            duration: '1h 30min',
+            views: '2K',
+          },
+          {
+            title: 'Bhai Jaan',
+            imgSrc: '/src/assets/images/movies/2.jpg',
+            duration: '1h 57min',
+            views: '1.5K',
+          },
+          {
+            title: 'Suraj pe Mangal Bhari',
+            imgSrc: '/src/assets/images/movies/3.jpg',
+            duration: '2h 10min',
+            views: '1.8K',
+          },
+          {
+            title: 'Pathan',
+            imgSrc: '/src/assets/images/movies/4.jpg',
+            duration: '2h 20min',
+            views: '3K',
+          },
+          {
+            title: 'Ant-man',
+            imgSrc: '/src/assets/images/movies/5.jpg',
+            duration: '1h 42min',
+            views: '5K',
+          },
+        ],
+      },
+      {
+        title: 'New Releases',
+        movieItems: [
+          {
+            title: 'Adipurush',
+            imgSrc: '/src/assets/images/movies/6.jpg',
+            released: {
+              label: '14 April 2023',
+              dateTime: '2023-04-14',
+            },
+          },
+          {
+            title: 'The Foreigner',
+            imgSrc: '/src/assets/images/movies/7.jpg',
+            released: {
+              label: '22 April 2023',
+              dateTime: '2023-04-22',
+            },
+          },
+          {
+            title: 'Sin city',
+            imgSrc: '/src/assets/images/movies/8.jpg',
+            released: {
+              label: '13 April 2023',
+              dateTime: '2023-04-13',
+            },
+          },
+          {
+            title: 'The Tomorrow War',
+            imgSrc: '/src/assets/images/movies/9.jpg',
+            released: {
+              label: '19 April 2023',
+              dateTime: '2023-04-19',
+            },
+          },
+          {
+            title: 'Misfire',
+            imgSrc: '/src/assets/images/movies/10.jpg',
+            released: {
+              label: '11 April 2023',
+              dateTime: '2023-04-11',
+            },
+          },
+
+          {
+            title: 'Adipurush',
+            imgSrc: '/src/assets/images/movies/6.jpg',
+            released: {
+              label: '14 April 2023',
+              dateTime: '2023-04-14',
+            },
+          },
+          {
+            title: 'The Foreigner',
+            imgSrc: '/src/assets/images/movies/7.jpg',
+            released: {
+              label: '22 April 2023',
+              dateTime: '2023-04-22',
+            },
+          },
+          {
+            title: 'Sin city',
+            imgSrc: '/src/assets/images/movies/8.jpg',
+            released: {
+              label: '13 April 2023',
+              dateTime: '2023-04-13',
+            },
+          },
+          {
+            title: 'The Tomorrow War',
+            imgSrc: '/src/assets/images/movies/9.jpg',
+            released: {
+              label: '19 April 2023',
+              dateTime: '2023-04-19',
+            },
+          },
+          {
+            title: 'Misfire',
+            imgSrc: '/src/assets/images/movies/10.jpg',
+            released: {
+              label: '11 April 2023',
+              dateTime: '2023-04-11',
+            },
+          },
+
+          {
+            title: 'Adipurush',
+            imgSrc: '/src/assets/images/movies/6.jpg',
+            released: {
+              label: '14 April 2023',
+              dateTime: '2023-04-14',
+            },
+          },
+          {
+            title: 'The Foreigner',
+            imgSrc: '/src/assets/images/movies/7.jpg',
+            released: {
+              label: '22 April 2023',
+              dateTime: '2023-04-22',
+            },
+          },
+          {
+            title: 'Sin city',
+            imgSrc: '/src/assets/images/movies/8.jpg',
+            released: {
+              label: '13 April 2023',
+              dateTime: '2023-04-13',
+            },
+          },
+          {
+            title: 'The Tomorrow War',
+            imgSrc: '/src/assets/images/movies/9.jpg',
+            released: {
+              label: '19 April 2023',
+              dateTime: '2023-04-19',
+            },
+          },
+          {
+            title: 'Misfire',
+            imgSrc: '/src/assets/images/movies/10.jpg',
+            released: {
+              label: '11 April 2023',
+              dateTime: '2023-04-11',
+            },
+          },
+
+          {
+            title: 'Adipurush',
+            imgSrc: '/src/assets/images/movies/6.jpg',
+            released: {
+              label: '14 April 2023',
+              dateTime: '2023-04-14',
+            },
+          },
+          {
+            title: 'The Foreigner',
+            imgSrc: '/src/assets/images/movies/7.jpg',
+            released: {
+              label: '22 April 2023',
+              dateTime: '2023-04-22',
+            },
+          },
+          {
+            title: 'Sin city',
+            imgSrc: '/src/assets/images/movies/8.jpg',
+            released: {
+              label: '13 April 2023',
+              dateTime: '2023-04-13',
+            },
+          },
+          {
+            title: 'The Tomorrow War',
+            imgSrc: '/src/assets/images/movies/9.jpg',
+            released: {
+              label: '19 April 2023',
+              dateTime: '2023-04-19',
+            },
+          },
+          {
+            title: 'Misfire',
+            imgSrc: '/src/assets/images/movies/10.jpg',
+            released: {
+              label: '11 April 2023',
+              dateTime: '2023-04-11',
+            },
+          },
+        ],
+      },
+      {
+        title: 'Must - Watch Movies',
+        movieItems: [
+          {
+            title: 'Kantara',
+            imgSrc: '/src/assets/images/movies/11.jpg',
+            duration: '1h 57min',
+            rating: {
+              value: 4.5,
+              label: '20K',
+            }
+          },
+          {
+            title: 'Pushpa',
+            imgSrc: '/src/assets/images/movies/12.jpg',
+            duration: '1h 30min',
+            rating: {
+              value: 4.0,
+              label: '20K',
+            }
+          },
+          {
+            title: 'Blade runner 2049',
+            imgSrc: '/src/assets/images/movies/13.jpg',
+            duration: '1h 42min',
+            rating: {
+              value: 4.5,
+              label: '20K',
+            }
+          },
+          {
+            title: 'Adipurush',
+            imgSrc: '/src/assets/images/movies/14.jpg',
+            duration: '2h 10min',
+            rating: {
+              value: 4.0,
+              label: '20K',
+            }
+          },
+
+          {
+            title: 'Kantara',
+            imgSrc: '/src/assets/images/movies/11.jpg',
+            duration: '1h 57min',
+            rating: {
+              value: 4.5,
+              label: '20K',
+            }
+          },
+          {
+            title: 'Pushpa',
+            imgSrc: '/src/assets/images/movies/12.jpg',
+            duration: '1h 30min',
+            rating: {
+              value: 4.0,
+              label: '20K',
+            }
+          },
+          {
+            title: 'Blade runner 2049',
+            imgSrc: '/src/assets/images/movies/13.jpg',
+            duration: '1h 42min',
+            rating: {
+              value: 4.5,
+              label: '20K',
+            }
+          },
+          {
+            title: 'Adipurush',
+            imgSrc: '/src/assets/images/movies/14.jpg',
+            duration: '2h 10min',
+            rating: {
+              value: 4.0,
+              label: '20K',
+            }
+          },
+
+          {
+            title: 'Kantara',
+            imgSrc: '/src/assets/images/movies/11.jpg',
+            duration: '1h 57min',
+            rating: {
+              value: 4.5,
+              label: '20K',
+            }
+          },
+          {
+            title: 'Pushpa',
+            imgSrc: '/src/assets/images/movies/12.jpg',
+            duration: '1h 30min',
+            rating: {
+              value: 4.0,
+              label: '20K',
+            }
+          },
+          {
+            title: 'Blade runner 2049',
+            imgSrc: '/src/assets/images/movies/13.jpg',
+            duration: '1h 42min',
+            rating: {
+              value: 4.5,
+              label: '20K',
+            }
+          },
+          {
+            title: 'Adipurush',
+            imgSrc: '/src/assets/images/movies/14.jpg',
+            duration: '2h 10min',
+            rating: {
+              value: 4.0,
+              label: '20K',
+            }
+          },
+
+          {
+            title: 'Kantara',
+            imgSrc: '/src/assets/images/movies/11.jpg',
+            duration: '1h 57min',
+            rating: {
+              value: 4.5,
+              label: '20K',
+            }
+          },
+          {
+            title: 'Pushpa',
+            imgSrc: '/src/assets/images/movies/12.jpg',
+            duration: '1h 30min',
+            rating: {
+              value: 4.0,
+              label: '20K',
+            }
+          },
+          {
+            title: 'Blade runner 2049',
+            imgSrc: '/src/assets/images/movies/13.jpg',
+            duration: '1h 42min',
+            rating: {
+              value: 4.5,
+              label: '20K',
+            }
+          },
+          {
+            title: 'Adipurush',
+            imgSrc: '/src/assets/images/movies/14.jpg',
+            duration: '2h 10min',
+            rating: {
+              value: 4.0,
+              label: '20K',
+            }
+          },
+        ],
+        sliderParams: {
+          slidesPerView: 4,
+          slidesPerGroup: 4,
+          spaceBetween: 30,
+          breakpoints: {
+            0: {
+              slidesPerView: 1.58,
               slidesPerGroup: 1,
               spaceBetween: 20,
               allowTouchMove: true,
