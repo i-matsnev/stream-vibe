@@ -2,12 +2,14 @@ import './CategoryCard.scss'
 import classNames from 'classnames'
 import { Image } from "minista"
 import Icon from "@/components/Icon"
+import Badge from "@/components/Badge"
 
 const CategoryCard = (props) => {
   const {
     className,
     title,
     images= [],
+    badge,
   } = props
 
   return (
@@ -26,7 +28,16 @@ const CategoryCard = (props) => {
       </div>
       <div className="category-card__body">
         <h3 className="category-card__title">
-          {title}
+          {badge && (
+            <Badge
+              lassName="category-card__badge"
+              mode="accent"
+              isBig
+            >
+              {badge}
+            </Badge>
+          )}
+          <span>{title}</span>
         </h3>
         <Icon
           className="category-card__icon"
