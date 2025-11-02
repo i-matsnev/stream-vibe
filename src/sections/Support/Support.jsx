@@ -4,6 +4,7 @@ import {Image} from "minista"
 import Field from "@/components/Field"
 import Checkbox from "@/components/Checkbox"
 import Button from "@/components/Button"
+import Select from "@/components/Select"
 
 const Support = (props) => {
   const {
@@ -56,6 +57,18 @@ const Support = (props) => {
           placeholder="(999) 999-99-99"
           inputMode="tel"
           mask="(000) 000-00-00"
+          renderBefore={(buttonClassName) => (
+            <Select
+              label="Phone number prefix"
+              buttonClassName={buttonClassName}
+              options={[
+                { value: "+7", isSelected: true },
+                { value: "+1" },
+                { value: "+2" },
+                { value: "+3" },
+              ]}
+            />
+          )}
         />
         <Field
           className="support__form-cell support__form-cell--wide"
