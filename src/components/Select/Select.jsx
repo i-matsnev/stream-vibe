@@ -21,7 +21,7 @@ const Select = (props) => {
   const IDs = {
     originalControl: id,
     label: `${id}-label`,
-    dropdown: `${id}-label`,
+    dropdown: `${id}-dropdown`,
   }
 
   const selectedOption = options.find((option) => option.isSelected) ?? options[0]
@@ -44,7 +44,7 @@ const Select = (props) => {
         className={classNames('select__original-control', buttonClassName)}
         id={IDs.originalControl}
         tabIndex={-1}
-        defaultValue={selectedOptions.value}
+        defaultValue={selectedOption.value}
         data-js-select-original-control=""
       >
         {options.map(({ value }, index) => (
@@ -64,7 +64,7 @@ const Select = (props) => {
           tabIndex={0}
           data-js-select-button=""
         >
-          {selectedOptions.value}
+          {selectedOption.value}
         </div>
         <div
           className="select__dropdown"
@@ -76,7 +76,7 @@ const Select = (props) => {
           {options.map((option, index) => {
             const {
               value,
-              isSelected = false
+              isSelected = false,
             } = option
 
             return (

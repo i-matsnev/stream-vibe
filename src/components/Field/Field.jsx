@@ -37,11 +37,11 @@ const Field = (props) => {
         htmlFor={id}
       >
         {label} {isRequired && (
-          <span
-            className="field__required-star"
-            aria-label="true"
-          >*</span>
-        )}
+        <span
+          className="field__required-star"
+          aria-hidden="true"
+        >*</span>
+      )}
       </label>
       <div className="field__body">
         {renderBefore?.('field__control')}
