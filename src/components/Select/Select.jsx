@@ -24,7 +24,7 @@ const Select = (props) => {
     dropdown: `${id}-label`,
   }
 
-  const selectedOptions = options.find(({ isSelected }) => isSelected) ?? options[0]
+  const selectedOption = options.find((option) => option.isSelected) ?? options[0]
 
   return (
     <div
