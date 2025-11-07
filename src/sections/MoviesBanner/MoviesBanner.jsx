@@ -46,7 +46,7 @@ const MoviesBanner = (props) => {
           },
         }}
         navigationPosition="abs-bottom"
-        justifyPosition="space-between"
+        navigationJustifyContent="space-between"
         hasScrollBarOnMobile={false}
       >
         {movieCards.map((movieCard, index) => (

@@ -8,14 +8,17 @@ const SliderNavigation = (props) => {
     id,
     hasPagination = true,
     /**
-     *  '' (default) | 'tile' | 'rounded'
+     * '' (default) | 'tile' | 'rounded'
      */
     mode = '',
     /**
      * '' (default) | 'abs-bottom'
      */
     position = '',
-    justify = '',
+    /**
+     * '' (default) | 'space-between'
+     */
+    justifyContent = '',
     isHiddenMobile = false,
     buttonMode = 'black-10',
   } = props
@@ -25,7 +28,7 @@ const SliderNavigation = (props) => {
       className={classNames(className, 'slider-navigation', {
         [`slider-navigation--${mode}`]: mode,
         [`slider-navigation--${position}`]: position,
-        [`slider-navigation--${justify}`]: justify,
+        [`slider-navigation--${justifyContent}`]: justifyContent,
         'hidden-mobile': isHiddenMobile,
       })}
       id={id}

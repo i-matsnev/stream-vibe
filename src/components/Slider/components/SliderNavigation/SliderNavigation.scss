@@ -22,15 +22,15 @@
     }
   }
 
+  &--space-between {
+    justify-content: space-between;
+  }
+
   &--abs-bottom {
     position: absolute;
     z-index: 1;
     inset-inline: fluid-to-laptop(50, 40);
     bottom: fluid-to-laptop(20, 16);
-  }
-
-  &--space-between {
-    justify-content: space-between !important;
   }
 
   &__pagination {
