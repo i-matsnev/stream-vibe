@@ -18,9 +18,12 @@ const Field = (props) => {
     renderBefore,
   } = props
 
+
   const Component = type === 'textarea'
     ? 'textarea'
     : 'input'
+
+  const fieldControlClassName = 'field__control'
 
   const extraAttrs = {}
 
@@ -44,9 +47,9 @@ const Field = (props) => {
       )}
       </label>
       <div className="field__body">
-        {renderBefore?.('field__control')}
+        {renderBefore?.(fieldControlClassName)}
         <Component
-          className="field__control"
+          className={fieldControlClassName}
           id={id}
           type={type}
           placeholder={placeholder}
