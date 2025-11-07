@@ -1,9 +1,13 @@
 table {
-  --tableBorder: var(--border);
+  --tableBorderWidth: var(--border-width-s);
+  --tableBorderColor: var(--color-black-15);
+  --tableBorder: var(--tableBorderWidth) solid var(--tableBorderColor);
 
   border: var(--tableBorder);
-  border-collapse: separate;
   border-radius: var(--border-radius-l);
+  box-shadow: 0 0 0 var(--tableBorderWidth) var(--tableBorderColor);
+  overflow: hidden;
+  width: 100%;
 
   @include laptop {
     border-radius: var(--border-radius-m);

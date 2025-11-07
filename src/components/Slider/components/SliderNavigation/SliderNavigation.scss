@@ -1,6 +1,5 @@
 .slider-navigation {
   display: flex;
-  justify-content: space-between;
   align-items: center;
 
   &--tile {
@@ -21,6 +20,10 @@
     .slider-navigation__arrow-button {
       border-radius: 50%;
     }
+  }
+
+  &--space-between {
+    justify-content: space-between;
   }
 
   &--abs-bottom {

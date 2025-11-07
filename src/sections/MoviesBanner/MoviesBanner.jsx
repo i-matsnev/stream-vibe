@@ -32,7 +32,6 @@ const MoviesBanner = (props) => {
     <section
       className={classNames(className, 'movies-banner container')}
       aria-labelledby={titleId}
-
     >
       <h1 className="visually-hidden" id={titleId}>
         Movies & Shows
@@ -47,6 +46,7 @@ const MoviesBanner = (props) => {
           },
         }}
         navigationPosition="abs-bottom"
+        navigationJustifyContent="space-between"
         hasScrollBarOnMobile={false}
       >
         {movieCards.map((movieCard, index) => (
