@@ -35,7 +35,7 @@
     background:
       var(--heroGradientTop),
       var(--heroGradientBottom),
-      url('../../assets/images/hero/bg.png') 50%/cover;
+      url('@/assets/images/hero/bg.png') 50%/cover;
     background-repeat: no-repeat;
   }
 
