@@ -52,6 +52,7 @@
   --container-padding-x: 16px;
 
   --section-padding-y: #{fluid(75, 40)};
+  --field-padding-x: #{fluid-to-laptop(20, 16)};
 
   --transition-duration: 0.2s;
   --transition-duration-longer: 0.4s;
