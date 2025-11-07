@@ -22,7 +22,7 @@ const PlansComparison = (props) => {
       tabsTitle: 'Basic',
     },
     {
-      children: <>Standard&nbsp;<Badge mode="accent">Popular</Badge></>,
+      children: <>Standard&nbsp;&nbsp;<Badge mode="accent">Popular</Badge></>,
       width: '25%',
       tabsTitle: 'Standard',
     },
