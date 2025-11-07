@@ -18,9 +18,11 @@
     "sass": "^1.81.0"
   },
   "dependencies": {
+    "-": "^0.0.1",
     "@a1rth/css-normalize": "^1.1.9",
     "classnames": "^2.5.1",
     "imask": "^7.6.1",
+    "postcss-preset-env": "^10.4.0",
     "swiper": "^11.1.15"
   }
 }
