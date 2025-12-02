@@ -1,6 +1,7 @@
 import './PlanCard.scss'
 import classNames from 'classnames'
 import Button from "@/components/Button"
+import getBasePath from "@/utils/getBasePath"
 
 const PlanCard = (props) => {
   const {
@@ -27,12 +28,12 @@ const PlanCard = (props) => {
       <div className="plan-card__actions">
         <Button
           label="Start Free Trial"
-          href="/subscriptions"
+          href={getBasePath('/subscriptions')}
           mode="black-08"
         />
         <Button
           label="Choose Plan"
-          href="/subscriptions"
+          href={getBasePath('/subscriptions')}
         />
       </div>
     </div>

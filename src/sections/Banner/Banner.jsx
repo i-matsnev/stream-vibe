@@ -1,6 +1,7 @@
 import './Banner.scss'
 import classNames from 'classnames'
 import Button from "@/components/Button"
+import getBasePath from "@/utils/getBasePath"
 
 const Banner = (props) => {
   const {
@@ -25,7 +26,7 @@ const Banner = (props) => {
         <Button
           className="banner__button"
           label="Start a Free Trail"
-          href="/subscriptions"
+          href={getBasePath('/subscriptions')}
         />
       </div>
     </section>

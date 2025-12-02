@@ -3,6 +3,7 @@ import Logo from "@/components/Logo"
 import classNames from "classnames"
 import Button from "@/components/Button"
 import BurgerButton from "@/components/BurgerButton"
+import getBasePath from "@/utils/getBasePath"
 
 const Header = (props) => {
   const {
@@ -13,19 +14,19 @@ const Header = (props) => {
   const menuItems = [
     {
       label: 'Home',
-      href: '/',
+      href: getBasePath('/'),
     },
     {
       label: 'Movies & Shows',
-      href: '/movies',
+      href: getBasePath('/movies'),
     },
     {
       label: 'Support',
-      href: '/support',
+      href: getBasePath('/support'),
     },
     {
       label: 'Subscriptions',
-      href: '/subscriptions',
+      href: getBasePath('/subscriptions'),
     },
   ]
 
@@ -46,18 +47,21 @@ const Header = (props) => {
         >
           <nav className="header__menu">
             <ul className="header__menu-list">
-              {menuItems.map(({ label, href }, index) => (
-                <li className="header__menu-item" key={index}>
-                  <a
-                    className={classNames('header__menu-link', {
-                      'is-active': href === url
-                    })}
-                    href={href}
-                  >
-                    {label}
-                  </a>
-                </li>
-              ))}
+              {menuItems.map(({ label, href }, index) => {
+                const normalizedUrl = url?.startsWith('/stream-vibe') ? url : getBasePath(url || '/')
+                return (
+                  <li className="header__menu-item" key={index}>
+                    <a
+                      className={classNames('header__menu-link', {
+                        'is-active': href === normalizedUrl
+                      })}
+                      href={href}
+                    >
+                      {label}
+                    </a>
+                  </li>
+                )
+              })}
             </ul>
           </nav>
           <div className="header__actions">

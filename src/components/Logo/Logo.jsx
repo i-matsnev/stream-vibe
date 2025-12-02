@@ -1,6 +1,7 @@
 import './Logo.scss'
 import classNames from 'classnames'
 import logoImgSrc from '@/assets/images/logo.svg'
+import getBasePath from '@/utils/getBasePath'
 
 const Logo = (props) => {
   const {
@@ -13,7 +14,7 @@ const Logo = (props) => {
   return (
     <a
       className={classNames(className, 'logo')}
-      href="/"
+      href={getBasePath('/')}
       title={title}
       aria-label={title}
     >

@@ -5,6 +5,7 @@ import SliderNavigation from "@/components/Slider/components/SliderNavigation"
 import Button from "@/components/Button"
 import AccordionGroup from "@/components/AccordionGroup"
 import Accordion from "@/components/Accordion"
+import getBasePath from "@/utils/getBasePath"
 
 const Questions = (props) => {
   const {
@@ -27,7 +28,7 @@ const Questions = (props) => {
       title="Frequently Asked Questions"
       titleId="questions-title"
       description="Got questions? We've got answers! Check out our FAQ section to find answers to the most common questions about StreamVibe."
-      actions={( <Button label="Ask a Question" href="/support" /> )}
+      actions={( <Button label="Ask a Question" href={getBasePath('/support')} /> )}
     >
       <AccordionGroup columns={2}>
         {questionItems.map((question, index) => (

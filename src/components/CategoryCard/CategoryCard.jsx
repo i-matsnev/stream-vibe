@@ -3,6 +3,7 @@ import classNames from 'classnames'
 import { Image } from "minista"
 import Icon from "@/components/Icon"
 import Badge from "@/components/Badge"
+import getBasePath from "@/utils/getBasePath"
 
 const CategoryCard = (props) => {
   const {
@@ -15,7 +16,7 @@ const CategoryCard = (props) => {
   return (
     <a
       className={classNames(className, 'category-card')}
-      href="/movies"
+      href={getBasePath('/movies')}
     >
       <div className="category-card__images">
         {images.map((imgSrc, index) => (
